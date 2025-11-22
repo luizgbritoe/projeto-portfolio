@@ -223,7 +223,6 @@ article h2 {
 #projeto-container .projeto:hover {
   border-color: var(--destaque);
   border-left-width: 15px;
-  cursor: pointer;
 }
 
 #projeto-container .foto {
@@ -232,6 +231,17 @@ article h2 {
   object-fit: cover;
   overflow: hidden;
   border-radius: 10px;
+}
+
+#projeto-container .projeto-info a {
+  text-decoration: none;
+  color: var(--destaque);
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+#projeto-container .projeto-info a:hover {
+  color: var(--destaque-inverso);
 }
 
 footer {
@@ -280,6 +290,11 @@ footer a:hover {
 
   #projeto-container .projeto-info {
     max-width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
   }
 
   #projeto-container .foto {
