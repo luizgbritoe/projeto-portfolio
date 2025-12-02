@@ -97,10 +97,6 @@ main {
   text-align: center;
 }
 
-#ficha p {
-  text-align: justify;
-}
-
 #ficha #social {
   display: flex;
   justify-content: center;
